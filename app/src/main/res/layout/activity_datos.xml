@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DatosActivity">
+
+    <ImageView
+        android:id="@+id/ivDatos"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/tvTituloDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivDatos"
+        android:layout_marginTop="16dp"
+        android:textSize="32sp"
+        android:text="Titulo">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvDescDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTituloDatos"
+        android:layout_marginTop="16dp"
+        android:text="Descripcion"
+        android:textSize="24sp">
+
+    </TextView>
+
+</RelativeLayout>
